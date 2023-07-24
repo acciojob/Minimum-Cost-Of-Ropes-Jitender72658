@@ -1,7 +1,7 @@
 function calculateMinCost() {
   //your code here
  let lengths = document.getElementById('rope-lengths');
- let values = lengths.value.split(', ').map(Number);
+ let values = lengths.value.split(',').map(Number);
  values.sort((a, b) => a - b);
 	let ans = 0;
 	while(values.length>2){
@@ -15,6 +15,4 @@ function calculateMinCost() {
 	ans+=values[0]+values[1];
  let result = document.getElementById('result');
 	result.textContent = ans;
-  
-  
 }  
